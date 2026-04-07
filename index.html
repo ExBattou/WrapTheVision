@@ -213,8 +213,11 @@
 <script>
 // ── CONFIG ──────────────────────────────────────────────────────
 const URLS = {
-  estado:      'https://www.vistagolf.com.ar/paginas/inclusion/aspb/EstadoCancha.asp?club=Jurado',
-  leaderboard: 'https://www.vistagolf.com.ar/paginas/inclusion/aspb/board.asp?club=jurado',
+  estado:      'https://www.vistagolf.com.ar/paginas/inclusion/aspb/EstadoCancha.asp?club=JURADO',
+  // URL Corregida (la que sacamos del iFrame):
+  leaderboard: 'https://www.vistagolf.com.ar/paginas/inclusion/aspb/LeaderboardNEW2024.asp?TorIdd=1234529029&club=JURADO',
+  // Las de la carpeta /homs/ suelen ser menos estables para scraping, 
+  // pero si funcionan en el navegador, el proxy las traerá:
   leaderboard2:'https://www.vistagolf.com.ar/paginas/homs/jurado/Ultimo_board.asp',
   teetime:     'https://www.vistagolf.com.ar/paginas/homs/jurado/Tee_time.asp',
   ranking:     'https://www.vistagolf.com.ar/paginas/homs/jurado/ranking.asp',
